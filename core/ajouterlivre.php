@@ -2,6 +2,8 @@
 include "../entity/Livre.php";
 include "livres.php";
 
+/**nnnnnnnnnnnno change here!**/
+
 if (isset($_POST['ajout']) and isset($_POST['reference']) and isset($_POST['prix']) and isset($_POST['description']) and isset($_POST['categorie']) and isset($_POST['titre']) and isset($_POST['date'])) {
     $target_dir = "../views/livres/";
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
